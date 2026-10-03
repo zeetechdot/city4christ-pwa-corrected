@@ -1,0 +1,619 @@
+/* =========================================
+CITY4CHRIST EVENTS / GATHERINGS
+========================================= */
+
+
+.events-container {
+
+    width:100%;
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:
+    34px 20px 120px;
+
+}
+
+
+/* HERO */
+
+.events-hero {
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:25px;
+
+    padding:34px;
+
+    border-radius:28px;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5B2C83,
+        #78439A
+    );
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 14px 40px
+    rgba(91,44,131,.18);
+
+}
+
+
+.events-kicker {
+
+    display:block;
+
+    color:#E4C75C;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    margin-bottom:8px;
+
+}
+
+
+.events-hero h1 {
+
+    margin:0 0 10px;
+
+    font-size:
+    clamp(30px,4vw,46px);
+
+    font-weight:800;
+
+}
+
+
+.events-hero p {
+
+    max-width:600px;
+
+    margin:0;
+
+    color:
+    rgba(255,255,255,.87);
+
+    line-height:1.7;
+
+}
+
+
+.events-hero-icon {
+
+    width:110px;
+    height:110px;
+
+    min-width:110px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.1);
+
+    color:#D4AF37;
+
+    font-size:45px;
+
+}
+
+
+
+/* FILTERS */
+
+.event-filters {
+
+    display:flex;
+
+    gap:9px;
+
+    overflow-x:auto;
+
+    margin:
+    0 0 30px;
+
+}
+
+
+.event-filter {
+
+    border:0;
+
+    border-radius:50px;
+
+    padding:
+    11px 20px;
+
+    background:#fff;
+
+    color:#756b79;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+
+.event-filter.active {
+
+    background:#5B2C83;
+
+    color:#fff;
+
+}
+
+
+
+/* SECTION */
+
+.events-section {
+
+    margin-bottom:40px;
+
+}
+
+
+.section-heading span {
+
+    color:#8C7E92;
+
+    font-size:13px;
+
+}
+
+
+.section-heading h2 {
+
+    margin:
+    3px 0 18px;
+
+    color:#2D1C37;
+
+    font-size:27px;
+
+    font-weight:800;
+
+}
+
+
+
+/* GRID */
+
+.events-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+    gap:20px;
+
+}
+
+
+
+/* CARD */
+
+.event-card {
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 9px 30px
+    rgba(0,0,0,.07);
+
+    border:
+    1px solid #eee8f0;
+
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+
+}
+
+
+.event-card:hover {
+
+    transform:
+    translateY(-5px);
+
+    box-shadow:
+    0 15px 38px
+    rgba(0,0,0,.1);
+
+}
+
+
+.event-image-wrap {
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16 / 8;
+
+    overflow:hidden;
+
+    background:#5B2C83;
+
+}
+
+
+.event-image {
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+}
+
+
+.event-badge {
+
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    padding:
+    7px 13px;
+
+    border-radius:50px;
+
+    background:
+    rgba(255,255,255,.92);
+
+    color:#5B2C83;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    backdrop-filter:
+    blur(6px);
+
+}
+
+
+
+/* CONTENT */
+
+.event-content {
+
+    display:grid;
+
+    grid-template-columns:
+    auto 1fr;
+
+    gap:16px;
+
+    padding:
+    20px 20px 10px;
+
+}
+
+
+.event-date-box {
+
+    width:64px;
+    height:72px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+}
+
+
+.event-date-box strong {
+
+    font-size:24px;
+
+    line-height:1;
+
+}
+
+
+.event-date-box span {
+
+    margin-top:5px;
+
+    font-size:11px;
+
+    font-weight:800;
+
+}
+
+
+.event-info h3 {
+
+    margin:
+    0 0 6px;
+
+    color:#2D1C37;
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+
+.event-info p {
+
+    margin:
+    0 0 12px;
+
+    color:#756D79;
+
+    line-height:1.6;
+
+    font-size:14px;
+
+}
+
+
+.event-meta {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:
+    8px 16px;
+
+}
+
+
+.event-meta span {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#746A79;
+
+    font-size:12px;
+
+}
+
+
+.event-meta i {
+
+    color:#5B2C83;
+
+}
+
+
+
+/* ACTIONS */
+
+.event-actions {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-top:auto;
+
+    padding:
+    12px 20px 20px;
+
+}
+
+
+.event-primary-btn {
+
+    flex:1;
+
+    min-height:44px;
+
+    border:0;
+
+    border-radius:14px;
+
+    background:#5B2C83;
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+
+.event-secondary-btn {
+
+    width:100%;
+
+    min-height:44px;
+
+    border:0;
+
+    border-radius:14px;
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+    font-weight:700;
+
+}
+
+
+.event-icon-btn {
+
+    width:45px;
+    height:44px;
+
+    border:0;
+
+    border-radius:14px;
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+}
+
+
+
+/* PAST EVENTS */
+
+.past-event {
+
+    opacity:.86;
+
+}
+
+
+.past-event .event-image {
+
+    filter:saturate(.75);
+
+}
+
+
+
+/* TABLET */
+
+@media(max-width:850px){
+
+    .events-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+    .events-container {
+
+        padding:
+        24px 14px 110px;
+
+    }
+
+
+    .events-hero {
+
+        padding:
+        25px 22px;
+
+    }
+
+
+    .events-hero-icon {
+
+        width:72px;
+        height:72px;
+
+        min-width:72px;
+
+        border-radius:22px;
+
+        font-size:31px;
+
+    }
+
+
+    .event-image-wrap {
+
+        aspect-ratio:16 / 9;
+
+    }
+
+
+    .event-content {
+
+        padding:
+        17px 16px 8px;
+
+    }
+
+
+    .event-actions {
+
+        padding:
+        10px 16px 17px;
+
+    }
+
+}
+
+
+
+/* SMALL MOBILE */
+
+@media(max-width:430px){
+
+    .events-hero-icon {
+
+        display:none;
+
+    }
+
+
+    .event-date-box {
+
+        width:58px;
+        height:66px;
+
+    }
+
+
+    .event-info h3 {
+
+        font-size:18px;
+
+    }
+
+}

@@ -1,0 +1,25 @@
+{
+  "name": "City4Christ",
+  "short_name": "City4Christ",
+  "description": "A faith-centered digital community for fellowship, prayer, worship, gatherings and pastoral care.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#5B2C83",
+  "theme_color": "#5B2C83",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

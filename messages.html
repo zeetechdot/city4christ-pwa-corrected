@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>City4Christ | Messages</title>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#5B2C83" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="City4Christ" name="apple-mobile-web-app-title"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/messages.css" rel="stylesheet"/>
+<link href="css/animation.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="app-header">
+<a aria-label="City4Christ home" class="header-logo" href="home.html">
+<img alt="City4Christ Logo" src="assets/images/logo.jpeg"/>
+<span>City4Christ</span>
+</a>
+<div class="header-actions">
+<button aria-label="Search" class="header-btn global-search-btn" type="button">
+<i class="bi bi-search"></i>
+</button>
+<a aria-label="Notifications" class="header-btn" href="notifications.html">
+<i class="bi bi-bell-fill"></i>
+</a>
+<a aria-label="Profile" class="header-profile-btn" href="profile.html">
+<img alt="Profile" src="assets/images/maleMember.jpeg"/>
+</a>
+</div>
+</header>
+<main class="messages-container">
+<!-- MESSAGE SIDEBAR -->
+<aside class="messages-sidebar">
+<div class="messages-sidebar-header">
+<div>
+<span class="messages-kicker">Community Messages</span>
+<h1>
+                    Messages
+                </h1>
+</div>
+<button class="new-message-btn" id="newMessageBtn" title="Start new conversation">
+<i class="bi bi-pencil-square"></i>
+</button>
+</div>
+<!-- SEARCH -->
+<div class="message-search">
+<i class="bi bi-search"></i>
+<input id="conversationSearch" placeholder="Search conversations" type="text"/>
+</div>
+<!-- CONVERSATIONS -->
+<div class="conversation-list">
+<button class="conversation-item active" data-image="assets/images/femaleMember.jpeg" data-name="Grace Williams">
+<img alt="Grace" class="conversation-avatar" src="assets/images/femaleMember.jpeg"/>
+<div class="conversation-details">
+<div class="conversation-top">
+<strong>
+                            Grace Williams
+                        </strong>
+<span>
+                            10:42
+                        </span>
+</div>
+<div class="conversation-preview">
+<span>
+                            God bless you too 🙏
+                        </span>
+<span class="unread-badge">
+                            2
+                        </span>
+</div>
+</div>
+</button>
+<button class="conversation-item" data-image="assets/images/maleMember.jpeg" data-name="Daniel James">
+<img alt="Daniel" class="conversation-avatar" src="assets/images/maleMember.jpeg"/>
+<div class="conversation-details">
+<div class="conversation-top">
+<strong>
+                            Daniel James
+                        </strong>
+<span>
+                            Yesterday
+                        </span>
+</div>
+<div class="conversation-preview">
+<span>
+                            Shared a photo
+                        </span>
+</div>
+</div>
+</button>
+<button class="conversation-item" data-image="assets/images/pastorPhoto.jpeg" data-name="Pastor John">
+<img alt="Pastor" class="conversation-avatar" src="assets/images/pastorPhoto.jpeg"/>
+<div class="conversation-details">
+<div class="conversation-top">
+<strong>
+                            Pastor John
+                        </strong>
+<span>
+                            Monday
+                        </span>
+</div>
+<div class="conversation-preview">
+<span>
+                            I will keep you in prayer.
+                        </span>
+</div>
+</div>
+</button>
+</div>
+</aside>
+<!-- CHAT PANEL -->
+<section class="chat-panel" id="chatPanel">
+<!-- CHAT HEADER -->
+<header class="chat-header">
+<div class="chat-user">
+<button class="mobile-back-btn" id="mobileBackBtn">
+<i class="bi bi-arrow-left"></i>
+</button>
+<a href="profile.html">
+<img alt="Profile" class="chat-avatar" id="chatAvatar" src="assets/images/femaleMember.jpeg"/>
+</a>
+<div>
+<a class="chat-name" href="profile.html" id="chatName">
+
+                        Grace Williams
+
+                    </a>
+<span>
+                        Active now
+                    </span>
+</div>
+</div>
+<div class="chat-header-actions">
+<button id="sharedMediaBtn">
+<i class="bi bi-images"></i>
+</button>
+<button>
+<i class="bi bi-three-dots-vertical"></i>
+</button>
+</div>
+</header>
+<!-- MESSAGES -->
+<div class="chat-messages" id="chatMessages">
+<div class="day-divider">
+                Today
+            </div>
+<div class="message-row received">
+<img alt="Grace" class="message-avatar" src="assets/images/femaleMember.jpeg"/>
+<div class="message-bubble">
+<p>
+                        Good morning. How are you today?
+                    </p>
+<span>
+                        10:31 AM
+                    </span>
+</div>
+</div>
+<div class="message-row sent">
+<div class="message-bubble">
+<p>
+                        I'm doing well. Thank God.
+                    </p>
+<span>
+                        10:34 AM
+                        <i class="bi bi-check2-all"></i>
+</span>
+</div>
+</div>
+<div class="message-row received">
+<img alt="Grace" class="message-avatar" src="assets/images/femaleMember.jpeg"/>
+<div class="message-bubble media-bubble">
+<img alt="Shared media" class="chat-image" src="assets/images/churchActivities.jpeg"/>
+<p>
+                        This was such a beautiful service.
+                    </p>
+<span>
+                        10:40 AM
+                    </span>
+</div>
+</div>
+<div class="message-row sent">
+<div class="message-bubble">
+<p>
+                        God bless you too 🙏
+                    </p>
+<span>
+                        10:42 AM
+                        <i class="bi bi-check2-all"></i>
+</span>
+</div>
+</div>
+</div>
+<!-- IMAGE PREVIEW -->
+<div class="image-preview-panel" id="imagePreviewPanel">
+<div class="preview-image-wrap">
+<img alt="Selected image" id="imagePreview"/>
+<button class="remove-preview-btn" id="removeImageBtn">
+<i class="bi bi-x-lg"></i>
+</button>
+</div>
+</div>
+<!-- COMPOSER -->
+<div class="message-composer">
+<label class="attach-btn" for="messageImage">
+<i class="bi bi-image"></i>
+</label>
+<input accept="image/*" hidden="" id="messageImage" type="file"/>
+<textarea id="messageInput" placeholder="Write a message..." rows="1"></textarea>
+<button class="send-message-btn" id="sendMessageBtn">
+<i class="bi bi-send-fill"></i>
+</button>
+</div>
+</section>
+</main>
+<!-- NEW MESSAGE MODAL -->
+<div class="new-message-modal" id="newMessageModal">
+<div class="new-message-dialog">
+<div class="new-message-header">
+<div>
+<span>
+                    Start a conversation
+                </span>
+<h2>
+                    New Message
+                </h2>
+</div>
+<button id="closeNewMessage">
+<i class="bi bi-x-lg"></i>
+</button>
+</div>
+<div class="message-search">
+<i class="bi bi-search"></i>
+<input placeholder="Search City4Christ members" type="text"/>
+</div>
+<div class="new-message-members">
+<button>
+<img alt="Pastor" src="assets/images/pastorPhoto.jpeg"/>
+<div>
+<strong>
+                        Pastor John
+                    </strong>
+<span>
+                        Senior Pastor
+                    </span>
+</div>
+</button>
+<button>
+<img alt="Daniel" src="assets/images/maleMember.jpeg"/>
+<div>
+<strong>
+                        Daniel James
+                    </strong>
+<span>
+                        Youth Fellowship
+                    </span>
+</div>
+</button>
+<button>
+<img alt="Grace" src="assets/images/femaleMember.jpeg"/>
+<div>
+<strong>
+                        Grace Williams
+                    </strong>
+<span>
+                        Women's Ministry
+                    </span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- SHARED MEDIA DRAWER -->
+<aside class="shared-media-drawer" id="sharedMediaDrawer">
+<div class="shared-media-header">
+<div>
+<span>
+                Conversation
+            </span>
+<h2>
+                Shared Media
+            </h2>
+</div>
+<button id="closeSharedMedia">
+<i class="bi bi-x-lg"></i>
+</button>
+</div>
+<div class="shared-media-grid">
+<img alt="Shared media" class="shared-media-image" src="assets/images/churchActivities.jpeg"/>
+<img alt="Shared media" class="shared-media-image" src="assets/images/youthWorship.jpeg"/>
+<img alt="Shared media" class="shared-media-image" src="assets/images/banner.jpeg"/>
+</div>
+</aside>
+<!-- IMAGE VIEWER -->
+<div class="image-viewer" id="imageViewer">
+<button class="close-image-viewer" id="closeImageViewer">
+<i class="bi bi-x-lg"></i>
+</button>
+<img alt="Shared image" id="viewerImage"/>
+</div>
+<nav class="bottom-nav"><a href="home.html"><i class="bi bi-house-fill"></i><span>Home</span></a><a class="active" href="community.html"><i class="bi bi-people-fill"></i><span>Community</span></a><a class="post-nav-link" href="home.html#share-faith"><i class="bi bi-plus-lg"></i><span>Post</span></a><a href="prayer.html"><i class="bi bi-heart-fill"></i><span>Prayer</span></a><a href="word.html"><i class="bi bi-book-fill"></i><span>Word</span></a></nav>
+<script src="js/app.js"></script>
+<script>
+
+const messageInput =
+document.getElementById("messageInput");
+
+const sendMessageBtn =
+document.getElementById("sendMessageBtn");
+
+const chatMessages =
+document.getElementById("chatMessages");
+
+const messageImage =
+document.getElementById("messageImage");
+
+const imagePreview =
+document.getElementById("imagePreview");
+
+const imagePreviewPanel =
+document.getElementById("imagePreviewPanel");
+
+const removeImageBtn =
+document.getElementById("removeImageBtn");
+
+let selectedImageURL = null;
+let sendingMessage = false;
+
+
+/* IMAGE PREVIEW */
+
+messageImage.addEventListener(
+"change",
+function(){
+
+    const file = this.files[0];
+
+    if(!file){
+        return;
+    }
+
+    if(selectedImageURL){
+        URL.revokeObjectURL(
+            selectedImageURL
+        );
+    }
+
+    selectedImageURL =
+    URL.createObjectURL(file);
+
+    imagePreview.src =
+    selectedImageURL;
+
+    imagePreviewPanel.classList.add(
+        "show"
+    );
+
+});
+
+
+removeImageBtn.addEventListener(
+"click",
+function(){
+
+    clearSelectedImage();
+
+});
+
+
+function clearSelectedImage(){
+
+    messageImage.value = "";
+
+    imagePreview.src = "";
+
+    imagePreviewPanel.classList.remove(
+        "show"
+    );
+
+    if(selectedImageURL){
+
+        URL.revokeObjectURL(
+            selectedImageURL
+        );
+
+        selectedImageURL = null;
+
+    }
+
+}
+
+
+/* SEND MESSAGE */
+
+sendMessageBtn.addEventListener(
+"click",
+sendMessage
+);
+
+
+messageInput.addEventListener(
+"keydown",
+function(event){
+
+    if(
+        event.key === "Enter" &&
+        !event.shiftKey
+    ){
+
+        event.preventDefault();
+
+        sendMessage();
+
+    }
+
+});
+
+
+function sendMessage(){
+
+    if(sendingMessage){
+        return;
+    }
+
+    const message =
+    messageInput.value.trim();
+
+    const hasImage =
+    Boolean(selectedImageURL);
+
+    if(!message && !hasImage){
+        return;
+    }
+
+
+    sendingMessage = true;
+
+    sendMessageBtn.disabled = true;
+
+
+    const row =
+    document.createElement("div");
+
+    row.className =
+    "message-row sent";
+
+
+    const bubble =
+    document.createElement("div");
+
+    bubble.className =
+    hasImage
+    ? "message-bubble media-bubble"
+    : "message-bubble";
+
+
+    if(hasImage){
+
+        const img =
+        document.createElement("img");
+
+        img.src =
+        selectedImageURL;
+
+        img.className =
+        "chat-image";
+
+        img.alt =
+        "Shared image";
+
+        img.addEventListener(
+        "click",
+        function(){
+
+            openImageViewer(
+                this.src
+            );
+
+        });
+
+        bubble.appendChild(img);
+
+    }
+
+
+    if(message){
+
+        const paragraph =
+        document.createElement("p");
+
+        paragraph.textContent =
+        message;
+
+        bubble.appendChild(
+            paragraph
+        );
+
+    }
+
+
+    const time =
+    document.createElement("span");
+
+    time.innerHTML =
+    new Date()
+    .toLocaleTimeString(
+        [],
+        {
+            hour:"2-digit",
+            minute:"2-digit"
+        }
+    )
+    +
+    ' <i class="bi bi-check2-all"></i>';
+
+
+    bubble.appendChild(time);
+
+    row.appendChild(bubble);
+
+    chatMessages.appendChild(row);
+
+
+    messageInput.value = "";
+
+    clearSelectedImage();
+
+
+    chatMessages.scrollTop =
+    chatMessages.scrollHeight;
+
+
+    setTimeout(() => {
+
+        sendingMessage = false;
+
+        sendMessageBtn.disabled = false;
+
+    }, 400);
+
+}
+
+
+
+/* CONVERSATION SWITCHING */
+
+document
+.querySelectorAll(".conversation-item")
+.forEach(item => {
+
+    item.addEventListener(
+    "click",
+    function(){
+
+        document
+        .querySelectorAll(
+            ".conversation-item"
+        )
+        .forEach(conversation => {
+
+            conversation.classList.remove(
+                "active"
+            );
+
+        });
+
+
+        this.classList.add(
+            "active"
+        );
+
+
+        document
+        .getElementById("chatName")
+        .textContent =
+        this.dataset.name;
+
+
+        document
+        .getElementById("chatAvatar")
+        .src =
+        this.dataset.image;
+
+
+        document
+        .getElementById("chatPanel")
+        .classList.add(
+            "mobile-open"
+        );
+
+    });
+
+});
+
+
+
+/* CONVERSATION SEARCH */
+
+document
+.getElementById("conversationSearch")
+.addEventListener(
+"input",
+function(){
+
+    const keyword =
+    this.value
+    .toLowerCase()
+    .trim();
+
+
+    document
+    .querySelectorAll(
+        ".conversation-item"
+    )
+    .forEach(item => {
+
+        const name =
+        item.dataset.name
+        .toLowerCase();
+
+        item.style.display =
+        name.includes(keyword)
+        ? ""
+        : "none";
+
+    });
+
+});
+
+
+
+/* NEW MESSAGE MODAL */
+
+const newMessageModal =
+document.getElementById(
+    "newMessageModal"
+);
+
+
+document
+.getElementById("newMessageBtn")
+.addEventListener(
+"click",
+function(){
+
+    newMessageModal
+    .classList.add("show");
+
+});
+
+
+document
+.getElementById("closeNewMessage")
+.addEventListener(
+"click",
+function(){
+
+    newMessageModal
+    .classList.remove("show");
+
+});
+
+
+
+/* SHARED MEDIA */
+
+const sharedMediaDrawer =
+document.getElementById(
+    "sharedMediaDrawer"
+);
+
+
+document
+.getElementById("sharedMediaBtn")
+.addEventListener(
+"click",
+function(){
+
+    sharedMediaDrawer
+    .classList.add("show");
+
+});
+
+
+document
+.getElementById("closeSharedMedia")
+.addEventListener(
+"click",
+function(){
+
+    sharedMediaDrawer
+    .classList.remove("show");
+
+});
+
+
+
+/* IMAGE VIEWER */
+
+const imageViewer =
+document.getElementById("imageViewer");
+
+const viewerImage =
+document.getElementById("viewerImage");
+
+
+function openImageViewer(src){
+
+    viewerImage.src = src;
+
+    imageViewer
+    .classList.add("show");
+
+}
+
+
+document
+.querySelectorAll(
+    ".chat-image, .shared-media-image"
+)
+.forEach(image => {
+
+    image.addEventListener(
+    "click",
+    function(){
+
+        openImageViewer(
+            this.src
+        );
+
+    });
+
+});
+
+
+document
+.getElementById("closeImageViewer")
+.addEventListener(
+"click",
+function(){
+
+    imageViewer
+    .classList.remove("show");
+
+});
+
+
+
+/* MOBILE BACK */
+
+document
+.getElementById("mobileBackBtn")
+.addEventListener(
+"click",
+function(){
+
+    document
+    .getElementById("chatPanel")
+    .classList.remove(
+        "mobile-open"
+    );
+
+});
+
+</script>
+</body>
+</html>

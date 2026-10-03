@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>City4Christ | Community</title>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#5B2C83" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="City4Christ" name="apple-mobile-web-app-title"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/community.css" rel="stylesheet"/>
+<link href="css/animation.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- HEADER -->
+<header class="app-header">
+<a aria-label="City4Christ home" class="header-logo" href="home.html">
+<img alt="City4Christ Logo" src="assets/images/logo.jpeg"/>
+<span>City4Christ</span>
+</a>
+<div class="header-actions">
+<button aria-label="Search" class="header-btn global-search-btn" type="button">
+<i class="bi bi-search"></i>
+</button>
+<a aria-label="Notifications" class="header-btn" href="notifications.html">
+<i class="bi bi-bell-fill"></i>
+</a>
+<a aria-label="Profile" class="header-profile-btn" href="profile.html">
+<img alt="Profile" src="assets/images/maleMember.jpeg"/>
+</a>
+</div>
+</header>
+<main class="community-container">
+<!-- COMMUNITY INTRO -->
+<section class="community-hero fade-up">
+<div>
+<span class="eyebrow">
+                Fellowship Community
+            </span>
+<h1>Grow. Serve. Belong.</h1>
+<p>Everyone in City4Christ is already connected. Discover members, ministry groups, fellowship and messages in one community.</p>
+</div>
+<div class="community-hero-icon">
+<i class="bi bi-people-fill"></i>
+</div>
+</section>
+<!-- SEARCH -->
+<section class="member-search-section fade-up">
+<div class="community-search">
+<i class="bi bi-search"></i>
+<input id="memberSearch" placeholder="Search people, ministries or fellowship groups" type="text"/>
+</div>
+</section>
+<!-- QUICK SECTIONS -->
+<section class="community-shortcuts">
+<button class="shortcut-card">
+<span class="shortcut-icon">
+<i class="bi bi-person-heart"></i>
+</span>
+<span>
+                Members
+            </span>
+</button>
+<button class="shortcut-card">
+<span class="shortcut-icon">
+<i class="bi bi-stars"></i>
+</span>
+<span>
+                Ministries
+            </span>
+</button>
+<button class="shortcut-card">
+<span class="shortcut-icon">
+<i class="bi bi-diagram-3-fill"></i>
+</span>
+<span>
+                Fellowship
+            </span>
+</button>
+<a class="shortcut-card shortcut-link" href="messages.html"><span class="shortcut-icon"><i class="bi bi-chat-dots-fill"></i></span><span>Messages</span></a></section>
+<!-- FEATURED MEMBERS -->
+<section class="community-section">
+<div class="section-heading">
+<div>
+<span class="section-kicker">
+                    People you may know
+                </span>
+<h2>
+                    Meet the Community
+                </h2>
+</div>
+<button class="see-all-btn">
+                See All
+            </button>
+</div>
+<div class="members-grid" id="membersGrid">
+<!-- MEMBER 1 -->
+<article class="member-card fade-up" data-member="pastor john leadership prayer pastor">
+<a class="member-avatar-link" href="profile.html">
+<img alt="Pastor" class="member-avatar" src="assets/images/pastorPhoto.jpeg"/>
+</a>
+<div class="member-info">
+<a class="member-name" href="profile.html">
+
+                        Pastor John
+
+                    </a>
+<span class="member-role">
+                        Senior Pastor
+                    </span>
+<p>
+                        Leadership • Prayer • Teaching
+                    </p>
+</div>
+<div class="member-actions"><a class="direct-message-btn" href="messages.html"><i class="bi bi-chat-dots-fill"></i> Message</a></div>
+</article>
+<!-- MEMBER 2 -->
+<article class="member-card fade-up" data-member="daniel worship youth male member">
+<a class="member-avatar-link" href="profile.html">
+<img alt="Community Member" class="member-avatar" src="assets/images/maleMember.jpeg"/>
+</a>
+<div class="member-info">
+<a class="member-name" href="profile.html">
+
+                        Daniel James
+
+                    </a>
+<span class="member-role">
+                        Youth Fellowship
+                    </span>
+<p>
+                        Worship • Fellowship • Outreach
+                    </p>
+</div>
+<div class="member-actions"><a class="direct-message-btn" href="messages.html"><i class="bi bi-chat-dots-fill"></i> Message</a></div>
+</article>
+<!-- MEMBER 3 -->
+<article class="member-card fade-up" data-member="grace women ministry female member">
+<a class="member-avatar-link" href="profile.html">
+<img alt="Community Member" class="member-avatar" src="assets/images/femaleMember.jpeg"/>
+</a>
+<div class="member-info">
+<a class="member-name" href="profile.html">
+
+                        Grace Williams
+
+                    </a>
+<span class="member-role">
+                        Women's Ministry
+                    </span>
+<p>
+                        Prayer • Family • Encouragement
+                    </p>
+</div>
+<div class="member-actions"><a class="direct-message-btn" href="messages.html"><i class="bi bi-chat-dots-fill"></i> Message</a></div>
+</article>
+<!-- MEMBER 4 -->
+<article class="member-card fade-up" data-member="family fellowship couples marriage">
+<a class="member-avatar-link" href="profile.html">
+<img alt="Family" class="member-avatar" src="assets/images/familyMember.jpeg"/>
+</a>
+<div class="member-info">
+<a class="member-name" href="profile.html">
+
+                        The Williams Family
+
+                    </a>
+<span class="member-role">
+                        Family Fellowship
+                    </span>
+<p>
+                        Family • Marriage • Community
+                    </p>
+</div>
+<div class="member-actions"><a class="direct-message-btn" href="messages.html"><i class="bi bi-chat-dots-fill"></i> Message</a></div>
+</article>
+</div>
+</section>
+<!-- MINISTRIES -->
+<section class="community-section ministry-groups-section" id="ministry-groups">
+<div class="section-heading"><div><span class="section-kicker">Ministry Groups Community</span><h2>Ministry Groups</h2></div></div>
+<div class="ministry-groups-grid">
+<article class="group-community-card">
+<div class="group-card-head"><img alt="Youth Explosion" src="assets/images/youthWorship.jpeg"/><div><h3>Youth Explosion</h3><p>Leader: Youth Ministry</p><span><i class="bi bi-telephone-fill"></i> +234 800 253 7739</span></div></div>
+<strong class="meeting-time">Meeting Time: Fridays @ 7PM</strong>
+<div class="group-feed-preview"><span>Private internal group feed</span><p><img alt="Sarah" src="assets/images/femaleMember.jpeg"/> Testimony from Sister Sarah: I am excited about what God is doing in the group...</p><small><i class="bi bi-chat-dots-fill"></i> 15 Discussion Topics</small></div>
+<button class="join-group-btn" type="button">Join Group</button>
+</article>
+<article class="group-community-card">
+<div class="group-card-head"><img alt="Women of Faith" src="assets/images/familyMember.jpeg"/><div><h3>Women of Faith</h3><p>Leader: Women Ministry</p><span><i class="bi bi-telephone-fill"></i> +234 800 333 3000</span></div></div>
+<strong class="meeting-time">Meeting Time: Fridays @ 7PM</strong>
+<div class="group-feed-preview"><span>Group discussion</span><p><img alt="Member" src="assets/images/femaleMember.jpeg"/> Discussion topic: Growing together in faith, family and purpose.</p><small><i class="bi bi-chat-dots-fill"></i> 3 Comments</small></div>
+<button class="join-group-btn" type="button">Join Group</button>
+</article>
+</div>
+</section><section class="community-section">
+<div class="section-heading">
+<div>
+<span class="section-kicker">
+                    Find your place
+                </span>
+<h2>
+                    Ministries
+                </h2>
+</div>
+</div>
+<div class="ministry-grid">
+<article class="ministry-card">
+<div class="ministry-icon">
+<i class="bi bi-music-note-beamed"></i>
+</div>
+<div>
+<h3>
+                        Worship Ministry
+                    </h3>
+<p>
+                        Sing, serve and worship together.
+                    </p>
+</div>
+<i class="bi bi-chevron-right"></i>
+</article>
+<article class="ministry-card">
+<div class="ministry-icon">
+<i class="bi bi-people"></i>
+</div>
+<div>
+<h3>
+                        Youth Ministry
+                    </h3>
+<p>
+                        Faith, growth and fellowship for young people.
+                    </p>
+</div>
+<i class="bi bi-chevron-right"></i>
+</article>
+<article class="ministry-card">
+<div class="ministry-icon">
+<i class="bi bi-heart"></i>
+</div>
+<div>
+<h3>
+                        Outreach Ministry
+                    </h3>
+<p>
+                        Serve people and share hope beyond the church.
+                    </p>
+</div>
+<i class="bi bi-chevron-right"></i>
+</article>
+</div>
+</section>
+</main>
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav"><a href="home.html"><i class="bi bi-house-fill"></i><span>Home</span></a><a class="active" href="community.html"><i class="bi bi-people-fill"></i><span>Community</span></a><a class="post-nav-link" href="home.html#share-faith"><i class="bi bi-plus-lg"></i><span>Post</span></a><a href="prayer.html"><i class="bi bi-heart-fill"></i><span>Prayer</span></a><a href="word.html"><i class="bi bi-book-fill"></i><span>Word</span></a></nav>
+<script src="js/app.js"></script>
+<script>
+
+const memberSearch =
+document.getElementById("memberSearch");
+
+const members =
+document.querySelectorAll(".member-card");
+
+
+memberSearch.addEventListener(
+    "input",
+    function(){
+
+        const keyword =
+        this.value.toLowerCase().trim();
+
+
+        members.forEach(member => {
+
+            const memberData =
+            member.dataset.member.toLowerCase();
+
+            member.style.display =
+            memberData.includes(keyword)
+            ? ""
+            : "none";
+
+        });
+
+    }
+);
+
+
+
+</script>
+</body>
+</html>

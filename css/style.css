@@ -1,0 +1,922 @@
+/* =====================================
+   CITY4CHRIST PWA GLOBAL STYLE
+===================================== */
+
+
+:root {
+
+    --primary-purple: #5B2C83;
+    --light-purple: #F3EEFA;
+    --gold: #D4AF37;
+    --white: #ffffff;
+    --background: #FAFAFA;
+    --text: #222222;
+    --muted: #777;
+
+}
+
+
+
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    padding-bottom:90px;
+
+}
+
+
+
+
+
+/* =====================================
+HEADER
+===================================== */
+
+
+.app-header {
+
+    height:80px;
+
+    background:var(--primary-purple);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:10px 20px;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+
+.header-logo {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:700;
+
+    font-size:20px;
+
+}
+
+
+
+.header-logo img {
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid var(--gold);
+
+}
+
+
+
+.notification-icon {
+
+    font-size:22px;
+
+}
+
+
+
+
+
+/* =====================================
+HOME CONTAINER
+===================================== */
+
+
+.home-container {
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding-top:35px; /* increase space below header */
+
+}
+
+
+
+
+
+/* =====================================
+WELCOME CARD
+===================================== */
+
+
+.welcome-card {
+
+
+background:
+
+linear-gradient(
+135deg,
+#5B2C83,
+#8146A5
+);
+
+
+color:white;
+
+padding:25px;
+
+border-radius:20px;
+
+margin-bottom:20px;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.12);
+
+
+}
+
+
+
+.welcome-card h2 {
+
+font-size:24px;
+
+font-weight:700;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+BANNER
+===================================== */
+
+
+.banner-card {
+
+    position:relative;
+    width:100%;
+    aspect-ratio:16 / 7;
+    overflow:hidden;
+    border-radius:20px;
+
+}
+.banner-card img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.banner-overlay {
+
+
+position:absolute;
+
+bottom:0;
+
+width:100%;
+
+padding:20px;
+
+background:
+
+linear-gradient(
+transparent,
+rgba(0,0,0,.75)
+);
+
+
+color:white;
+
+
+}
+
+
+
+.banner-overlay button {
+
+
+background:var(--gold);
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+font-weight:600;
+
+color:var(--primary-purple);
+
+
+}
+
+
+/* =====================================
+SCRIPTURE CARD
+===================================== */
+
+
+.scripture-card {
+
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+margin-bottom:20px;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.scripture-card i {
+
+
+font-size:35px;
+
+color:var(--gold);
+
+
+}
+
+
+
+.scripture-card h4 {
+
+
+color:var(--primary-purple);
+
+}
+
+
+
+
+
+
+
+/* =====================================
+SHARE FAITH
+===================================== */
+
+
+.faith-share-card {
+
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+.avatar {
+
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:
+
+3px solid var(--gold);
+
+
+}
+
+
+
+
+
+.faith-share-card textarea {
+
+
+width:100%;
+
+height:90px;
+
+border-radius:15px;
+
+padding:15px;
+
+margin-top:15px;
+
+border:1px solid #ddd;
+
+resize:none;
+
+
+}
+
+
+
+.post-actions {
+
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:15px;
+
+
+}
+
+
+
+.post-actions button {
+
+
+border:none;
+
+background:none;
+
+color:var(--primary-purple);
+
+font-weight:600;
+
+
+}
+
+
+
+.share-btn {
+
+
+background:var(--primary-purple)!important;
+
+color:white!important;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+
+}
+
+
+/* =====================================
+FAITH MOMENTS
+===================================== */
+
+
+.section-title {
+
+
+font-size:24px;
+
+font-weight:700;
+
+margin:25px 0 15px;
+
+color:var(--primary-purple);
+
+
+}
+
+.faith-card {
+
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+margin-bottom:20px;
+
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+.profile-row {
+
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+
+}
+
+
+
+.post-avatar {
+
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:
+
+3px solid var(--gold);
+
+
+}
+
+
+
+.profile-row span {
+
+
+font-size:13px;
+
+color:var(--muted);
+
+
+}
+
+
+.post-image {
+
+    width:100%;
+
+    aspect-ratio:4 / 3;
+
+    max-height:260px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-top:15px;
+
+}
+
+
+
+.interaction {
+
+
+display:flex;
+
+justify-content:space-around;
+
+margin-top:15px;
+
+
+}
+
+
+
+.interaction button {
+
+
+border:none;
+
+background:none;
+
+font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================
+BOTTOM NAVIGATION
+===================================== */
+
+
+.bottom-nav {
+
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+
+height:75px;
+
+
+background:white;
+
+
+display:flex;
+
+
+justify-content:space-around;
+
+
+align-items:center;
+
+
+box-shadow:
+
+0 -5px 20px rgba(0,0,0,.1);
+
+
+z-index:1000;
+
+
+}
+
+
+
+.bottom-nav a {
+
+
+text-decoration:none;
+
+color:#777;
+
+font-size:12px;
+
+text-align:center;
+
+
+}
+
+
+
+.bottom-nav i {
+
+
+display:block;
+
+font-size:23px;
+
+}
+
+
+
+.bottom-nav .active {
+
+
+color:var(--primary-purple);
+
+}
+
+
+
+
+
+/* =====================================
+MOBILE OPTIMIZATION
+===================================== */
+
+
+@media(max-width:576px){
+
+
+.banner-card img {
+
+height:180px;
+
+}
+
+
+
+.welcome-card h2 {
+
+font-size:20px;
+
+}
+
+
+
+.post-image {
+
+height:190px;
+
+}
+
+
+}
+
+@media(min-width:992px){
+
+
+.faith-card {
+
+    transition:.3s ease;
+
+}
+
+
+
+.faith-card:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.banner-card {
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+}
+
+
+/* =========================================
+CITY4CHRIST GLOBAL DARK MODE
+========================================= */
+
+[data-theme="dark"] body {
+    background: #141216;
+    color: #F4F0F5;
+}
+
+
+/* HEADER */
+
+[data-theme="dark"] .app-header {
+    background: #251B2B;
+}
+
+
+/* GENERAL CARDS */
+
+[data-theme="dark"] .welcome-card,
+[data-theme="dark"] .scripture-card,
+[data-theme="dark"] .faith-share-card,
+[data-theme="dark"] .faith-card,
+[data-theme="dark"] .profile-card,
+[data-theme="dark"] .profile-post,
+[data-theme="dark"] .member-card,
+[data-theme="dark"] .ministry-card,
+[data-theme="dark"] .prayer-submit-card,
+[data-theme="dark"] .prayer-card,
+[data-theme="dark"] .event-card,
+[data-theme="dark"] .pastor-card,
+[data-theme="dark"] .booking-form-card,
+[data-theme="dark"] .notification-card,
+[data-theme="dark"] .settings-card,
+[data-theme="dark"] .settings-profile-card {
+
+    background: #211C24;
+    color: #F4F0F5;
+}
+
+
+/* HEADINGS */
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+
+    color: #FFFFFF;
+}
+
+
+/* NORMAL TEXT */
+
+[data-theme="dark"] p,
+[data-theme="dark"] span,
+[data-theme="dark"] small {
+
+    color: #C6BDC9;
+}
+
+
+/* LINKS */
+
+[data-theme="dark"] a {
+    color: #DCC6E9;
+}
+
+
+/* INPUTS */
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+
+    background: #2A242E !important;
+
+    color: #FFFFFF !important;
+
+    border-color: #453B49 !important;
+
+    caret-color: #D4AF37;
+}
+
+
+/* PLACEHOLDERS */
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+
+    color: #A99EAD !important;
+    opacity: 1;
+}
+
+
+/* SEARCH BARS */
+
+[data-theme="dark"] .community-search,
+[data-theme="dark"] .message-search {
+
+    background: #2A242E;
+}
+
+
+[data-theme="dark"] .community-search input,
+[data-theme="dark"] .message-search input {
+
+    background: transparent !important;
+
+    color: #FFFFFF !important;
+}
+
+
+/* BOTTOM NAVIGATION */
+
+[data-theme="dark"] .bottom-nav {
+
+    background: #201A23;
+
+    box-shadow:
+    0 -5px 20px
+    rgba(0,0,0,.35);
+}
+
+
+[data-theme="dark"] .bottom-nav a {
+
+    color: #A99FAC;
+}
+
+
+[data-theme="dark"] .bottom-nav .active {
+
+    color: #D4AF37;
+}
+
+
+/* BUTTONS */
+
+[data-theme="dark"] .header-btn,
+[data-theme="dark"] .message-member-btn,
+[data-theme="dark"] .event-icon-btn {
+
+    background: #332A37;
+
+    color: #D4AF37;
+}
+
+
+/* DIVIDERS */
+
+[data-theme="dark"] .settings-row,
+[data-theme="dark"] .chat-header,
+[data-theme="dark"] .message-composer {
+
+    border-color: #403644;
+}
+
+
+/* CHAT */
+
+[data-theme="dark"] .messages-sidebar,
+[data-theme="dark"] .chat-header,
+[data-theme="dark"] .message-composer {
+
+    background: #211C24;
+}
+
+
+[data-theme="dark"] .chat-panel {
+
+    background: #18151A;
+}
+
+
+[data-theme="dark"] .message-row.received .message-bubble {
+
+    background: #2B252F;
+
+    color: #FFFFFF;
+}
+
+
+[data-theme="dark"] .message-row.sent .message-bubble {
+
+    background: #5B2C83;
+
+    color: #FFFFFF;
+}
+
+
+/* NOTIFICATIONS */
+
+[data-theme="dark"] .notification-card.unread {
+
+    background: #2B2230;
+
+    border-color: #49394F;
+}
+
+
+/* MODALS */
+
+[data-theme="dark"] .new-message-dialog,
+[data-theme="dark"] .delete-dialog,
+[data-theme="dark"] .deletion-status-card {
+
+    background: #211C24;
+
+    color: #FFFFFF;
+}
+
+/* === Client review: shared header + revised primary navigation === */
+.header-logo{color:#fff;text-decoration:none}.header-logo:hover{color:#fff}.header-actions{display:flex;align-items:center;gap:10px}.header-btn{width:42px;height:42px;border:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.10);color:#fff;text-decoration:none;font-size:18px}.header-profile-btn{width:43px;height:43px;border-radius:50%;overflow:hidden;display:inline-flex;border:2px solid rgba(255,255,255,.7)}.header-profile-btn img{width:100%;height:100%;object-fit:cover}.bottom-nav a{flex:1;display:flex;min-width:0;flex-direction:column;align-items:center;justify-content:center;gap:2px;height:100%}.bottom-nav .post-nav-link{position:relative;transform:translateY(-13px);color:#fff}.bottom-nav .post-nav-link i{width:54px;height:54px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,#7a3fb1,#D4AF37);color:#fff;box-shadow:0 8px 24px rgba(91,44,131,.28);border:4px solid #fff}.bottom-nav .post-nav-link span{margin-top:2px;color:#5B2C83;font-weight:700}@media(max-width:420px){.app-header{padding:10px 12px}.header-logo span{font-size:18px}.header-actions{gap:6px}.header-btn{width:38px;height:38px}.header-profile-btn{width:39px;height:39px}}

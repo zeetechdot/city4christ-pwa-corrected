@@ -1,0 +1,779 @@
+/* =========================================
+   CITY4CHRIST COMMUNITY PAGE
+========================================= */
+
+
+.community-container {
+
+    width:100%;
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:
+    34px 22px 120px;
+
+}
+
+
+
+/* HERO */
+
+.community-hero {
+
+    min-height:220px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:30px;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5B2C83,
+        #7f43a4
+    );
+
+    box-shadow:
+    0 15px 40px
+    rgba(91,44,131,.18);
+
+    margin-bottom:28px;
+
+}
+
+
+.eyebrow {
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#F2D16C;
+
+    font-weight:700;
+
+    font-size:13px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+.community-hero h1 {
+
+    font-size:
+    clamp(30px,4vw,46px);
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+
+.community-hero p {
+
+    max-width:600px;
+
+    margin:0;
+
+    color:
+    rgba(255,255,255,.88);
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+
+.community-hero-icon {
+
+    width:120px;
+    height:120px;
+
+    min-width:120px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:35px;
+
+    background:
+    rgba(255,255,255,.1);
+
+    border:
+    1px solid
+    rgba(255,255,255,.15);
+
+    font-size:52px;
+
+    color:#D4AF37;
+
+}
+
+
+
+/* SEARCH */
+
+.member-search-section {
+
+    margin-bottom:24px;
+
+}
+
+
+.community-search {
+
+    min-height:58px;
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    padding:
+    0 20px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:
+    1px solid #ece7ef;
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.05);
+
+}
+
+
+.community-search i {
+
+    color:#5B2C83;
+
+    font-size:20px;
+
+}
+
+
+.community-search input {
+
+    width:100%;
+
+    border:0;
+    outline:0;
+
+    background:transparent;
+
+    color:#222;
+
+    font-size:15px;
+
+}
+
+
+.community-search input::placeholder {
+
+    color:#888;
+
+}
+
+
+
+/* SHORTCUTS */
+
+.community-shortcuts {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:16px;
+
+    margin-bottom:38px;
+
+}
+
+
+.shortcut-card {
+
+    min-height:105px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:9px;
+
+    border:0;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    color:#5B2C83;
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.06);
+
+    font-weight:700;
+
+}
+
+
+.shortcut-icon {
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+    font-size:22px;
+
+}
+
+
+.shortcut-card:hover {
+
+    transform:
+    translateY(-4px);
+
+}
+
+
+
+/* SECTION */
+
+.community-section {
+
+    margin-top:34px;
+
+}
+
+
+.section-heading {
+
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:18px;
+
+}
+
+
+.section-kicker {
+
+    display:block;
+
+    color:#8b7798;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:3px;
+
+}
+
+
+.section-heading h2 {
+
+    margin:0;
+
+    color:#2e1d38;
+
+    font-size:26px;
+
+    font-weight:800;
+
+}
+
+
+.see-all-btn {
+
+    border:0;
+
+    background:none;
+
+    color:#5B2C83;
+
+    font-weight:700;
+
+}
+
+
+
+/* MEMBERS GRID */
+
+.members-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+
+.member-card {
+
+    display:grid;
+
+    grid-template-columns:
+    auto 1fr;
+
+    gap:16px;
+
+    padding:20px;
+
+    border-radius:24px;
+
+    background:#fff;
+
+    box-shadow:
+    0 9px 30px
+    rgba(0,0,0,.07);
+
+    border:
+    1px solid #eee8f2;
+
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+
+}
+
+
+.member-card:hover {
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0 14px 38px
+    rgba(0,0,0,.1);
+
+}
+
+
+.member-avatar-link {
+
+    display:block;
+
+    width:max-content;
+
+}
+
+
+.member-avatar {
+
+    width:92px;
+    height:92px;
+
+    border-radius:24px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border:
+    3px solid #D4AF37;
+
+    transition:
+    transform .25s ease;
+
+}
+
+
+.member-avatar:hover {
+
+    transform:
+    scale(1.04);
+
+}
+
+
+.member-info {
+
+    min-width:0;
+
+}
+
+
+.member-name {
+
+    display:block;
+
+    color:#2d1b39;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    margin-bottom:2px;
+
+}
+
+
+.member-name:hover {
+
+    color:#5B2C83;
+
+}
+
+
+.member-role {
+
+    color:#5B2C83;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+
+.member-info p {
+
+    margin:
+    8px 0 0;
+
+    color:#777;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+.member-actions {
+
+    grid-column:
+    1 / -1;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+.connect-btn {
+
+    flex:1;
+
+    min-height:43px;
+
+    border:0;
+
+    border-radius:14px;
+
+    background:#5B2C83;
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+
+.connect-btn.connected {
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+}
+
+
+.message-member-btn {
+
+    width:46px;
+    height:43px;
+
+    border:0;
+
+    border-radius:14px;
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+    font-size:18px;
+
+}
+
+
+
+/* MINISTRIES */
+
+.ministry-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+    gap:16px;
+
+}
+
+
+.ministry-card {
+
+    min-height:150px;
+
+    display:grid;
+
+    grid-template-columns:
+    auto 1fr auto;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:20px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.06);
+
+}
+
+
+.ministry-icon {
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#F3EEFA;
+
+    color:#5B2C83;
+
+    font-size:24px;
+
+}
+
+
+.ministry-card h3 {
+
+    margin:0 0 5px;
+
+    font-size:17px;
+
+    color:#2d1b39;
+
+    font-weight:800;
+
+}
+
+
+.ministry-card p {
+
+    margin:0;
+
+    color:#7e7583;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+.ministry-card >
+.bi-chevron-right {
+
+    color:#D4AF37;
+
+}
+
+
+
+/* TABLET */
+
+@media(
+    max-width:900px
+){
+
+    .ministry-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(
+    max-width:700px
+){
+
+    .community-container {
+
+        padding:
+        24px 14px 110px;
+
+    }
+
+
+    .community-hero {
+
+        min-height:auto;
+
+        padding:26px 22px;
+
+        border-radius:24px;
+
+    }
+
+
+    .community-hero-icon {
+
+        width:75px;
+        height:75px;
+
+        min-width:75px;
+
+        border-radius:22px;
+
+        font-size:32px;
+
+    }
+
+
+    .community-hero h1 {
+
+        font-size:29px;
+
+    }
+
+
+    .community-hero p {
+
+        font-size:14px;
+
+    }
+
+
+    .members-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .community-shortcuts {
+
+        gap:10px;
+
+    }
+
+
+    .shortcut-card {
+
+        min-height:90px;
+
+        font-size:12px;
+
+    }
+
+
+    .shortcut-icon {
+
+        width:42px;
+        height:42px;
+
+    }
+
+}
+
+
+
+/* SMALL MOBILE */
+
+@media(
+    max-width:430px
+){
+
+    .community-hero-icon {
+
+        display:none;
+
+    }
+
+
+    .member-avatar {
+
+        width:82px;
+        height:82px;
+
+        border-radius:22px;
+
+    }
+
+
+    .member-card {
+
+        gap:13px;
+
+        padding:16px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size:22px;
+
+    }
+
+}
+/* Client review: everyone connected by default */
+.shortcut-link{text-decoration:none;color:inherit}.direct-message-btn{width:100%;min-height:43px;border:0;border-radius:14px;background:#5B2C83;color:#fff!important;text-decoration:none;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px}.ministry-groups-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.group-community-card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.07);display:flex;flex-direction:column;gap:14px}.group-card-head{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center}.group-card-head>img{width:96px;height:96px;border-radius:16px;object-fit:cover}.group-card-head h3{margin:0 0 4px;font-size:19px;font-weight:800;color:#2d1b39}.group-card-head p{margin:0 0 6px;color:#68606d}.group-card-head span{font-size:13px;color:#5B2C83}.meeting-time{font-size:14px;color:#2d1b39}.group-feed-preview{background:#F3EEFA;border-radius:16px;padding:14px}.group-feed-preview>span{font-size:12px;color:#756d79}.group-feed-preview p{margin:8px 0;display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.45}.group-feed-preview p img{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:0 0 auto}.group-feed-preview small{color:#5B2C83}.join-group-btn{min-height:43px;border:0;border-radius:13px;background:#D4AF37;color:#34203f;text-transform:uppercase;font-weight:900;letter-spacing:.03em}@media(max-width:720px){.ministry-groups-grid{grid-template-columns:1fr}}

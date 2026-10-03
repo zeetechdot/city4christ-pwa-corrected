@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>City4Christ | Prayer</title>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#5B2C83" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="City4Christ" name="apple-mobile-web-app-title"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/prayer.css" rel="stylesheet"/>
+<link href="css/animation.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="app-header">
+<a aria-label="City4Christ home" class="header-logo" href="home.html">
+<img alt="City4Christ Logo" src="assets/images/logo.jpeg"/>
+<span>City4Christ</span>
+</a>
+<div class="header-actions">
+<button aria-label="Search" class="header-btn global-search-btn" type="button">
+<i class="bi bi-search"></i>
+</button>
+<a aria-label="Notifications" class="header-btn" href="notifications.html">
+<i class="bi bi-bell-fill"></i>
+</a>
+<a aria-label="Profile" class="header-profile-btn" href="profile.html">
+<img alt="Profile" src="assets/images/maleMember.jpeg"/>
+</a>
+</div>
+</header>
+<main class="prayer-container">
+<!-- HERO -->
+<section class="prayer-hero fade-up">
+<div>
+<span class="prayer-kicker">
+                Prayer Community
+            </span>
+<h1>
+                You are not praying alone.
+            </h1>
+<p>
+                Share a prayer request, encourage someone,
+                or stand in faith with the community.
+            </p>
+</div>
+<div class="prayer-hero-icon">
+<i class="bi bi-heart-pulse-fill"></i>
+</div>
+</section>
+<!-- SUBMIT PRAYER -->
+<section class="prayer-submit-card fade-up">
+<div class="submit-header">
+<img alt="Profile" class="prayer-user-avatar" src="assets/images/maleMember.jpeg"/>
+<div>
+<h2>
+                    Share a Prayer Request
+                </h2>
+<p>
+                    Your request can encourage others to pray with you.
+                </p>
+</div>
+</div>
+<form id="prayerForm">
+<textarea id="prayerText" placeholder="What would you like the community to pray about?" required=""></textarea>
+<div class="prayer-options">
+<label class="privacy-option">
+<input id="anonymousPrayer" type="checkbox"/>
+<span>
+                        Post anonymously
+                    </span>
+</label>
+<button class="submit-prayer-btn" type="submit">
+<i class="bi bi-send-fill"></i>
+
+                    Submit Prayer
+
+                </button>
+</div>
+</form>
+<div class="prayer-success" id="prayerSuccess">
+<i class="bi bi-check-circle-fill"></i>
+<div>
+<strong>
+                    Prayer submitted successfully
+                </strong>
+<span>
+                    Your request has been added to the Prayer Wall.
+                </span>
+</div>
+</div>
+</section>
+<!-- FILTERS -->
+<section class="prayer-filters">
+<button class="prayer-filter active">
+            All Prayers
+        </button>
+<button class="prayer-filter">
+            Recent
+        </button>
+<button class="prayer-filter">
+            My Prayers
+        </button>
+
+</section>
+<!-- PRAYER WALL -->
+<section class="prayer-wall">
+<div class="section-heading">
+<div>
+<span>
+                    Community Prayer Wall
+                </span>
+<h2>
+                    Pray With Someone
+                </h2>
+</div>
+</div>
+<!-- PRAYER 1 -->
+<article class="prayer-card fade-up">
+<div class="prayer-profile-row">
+<img alt="Member" class="prayer-avatar" src="assets/images/femaleMember.jpeg"/>
+<div>
+<a href="profile.html">
+                        Grace Williams
+                    </a>
+<span>
+                        18 minutes ago
+                    </span>
+</div>
+</div>
+<p>
+                Please stand with me in prayer for wisdom
+                and direction as I make an important decision.
+            </p>
+<div class="prayer-card-actions">
+<button class="pray-btn">
+<i class="bi bi-heart-fill"></i>
+<span>
+                        I Prayed
+                    </span>
+<strong>
+                        24
+                    </strong>
+</button>
+<button>
+<i class="bi bi-chat-dots"></i>
+
+                    Encourage
+
+                </button>
+<button>
+<i class="bi bi-share"></i>
+
+                    Share
+
+                </button>
+</div>
+</article>
+<!-- PRAYER 2 -->
+<article class="prayer-card fade-up">
+<div class="prayer-profile-row">
+<img alt="Family" class="prayer-avatar" src="assets/images/familyMember.jpeg"/>
+<div>
+<a href="profile.html">
+                        The Williams Family
+                    </a>
+<span>
+                        1 hour ago
+                    </span>
+</div>
+</div>
+<p>
+                We are thanking God for His faithfulness
+                and asking for continued grace over our family.
+            </p>
+
+<div class="prayer-card-actions">
+<button class="pray-btn">
+<i class="bi bi-heart-fill"></i>
+<span>
+                        I Prayed
+                    </span>
+<strong>
+                        41
+                    </strong>
+</button>
+<button>
+<i class="bi bi-chat-dots"></i>
+
+                    Encourage
+
+                </button>
+<button>
+<i class="bi bi-share"></i>
+
+                    Share
+
+                </button>
+</div>
+</article>
+</section>
+</main>
+<nav class="bottom-nav"><a href="home.html"><i class="bi bi-house-fill"></i><span>Home</span></a><a href="community.html"><i class="bi bi-people-fill"></i><span>Community</span></a><a class="post-nav-link" href="home.html#share-faith"><i class="bi bi-plus-lg"></i><span>Post</span></a><a class="active" href="prayer.html"><i class="bi bi-heart-fill"></i><span>Prayer</span></a><a href="word.html"><i class="bi bi-book-fill"></i><span>Word</span></a></nav>
+<script src="js/app.js"></script>
+<script>
+
+const prayerForm =
+document.getElementById("prayerForm");
+
+const prayerText =
+document.getElementById("prayerText");
+
+const prayerSuccess =
+document.getElementById("prayerSuccess");
+
+
+prayerForm.addEventListener(
+"submit",
+function(event){
+
+    event.preventDefault();
+
+    const prayer =
+    prayerText.value.trim();
+
+    if(!prayer){
+        return;
+    }
+
+    prayerSuccess.classList.add("show");
+
+    prayerText.value = "";
+
+    setTimeout(() => {
+
+        prayerSuccess.classList.remove("show");
+
+    }, 5000);
+
+});
+
+
+document
+.querySelectorAll(".pray-btn")
+.forEach(button => {
+
+    button.addEventListener(
+    "click",
+    function(){
+
+        this.classList.toggle("prayed");
+
+        const counter =
+        this.querySelector("strong");
+
+        let number =
+        Number(counter.textContent);
+
+        if(
+            this.classList.contains("prayed")
+        ){
+
+            number++;
+
+            this.querySelector("span")
+            .textContent =
+            "Prayed";
+
+        }
+
+        else{
+
+            number--;
+
+            this.querySelector("span")
+            .textContent =
+            "I Prayed";
+
+        }
+
+        counter.textContent =
+        number;
+
+    });
+
+});
+
+
+document
+.querySelectorAll(".prayer-filter")
+.forEach(button => {
+
+    button.addEventListener(
+    "click",
+    function(){
+
+        document
+        .querySelectorAll(".prayer-filter")
+        .forEach(item => {
+
+            item.classList.remove("active");
+
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+
+</script>
+</body>
+</html>

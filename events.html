@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>City4Christ | Gatherings</title>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#5B2C83" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="City4Christ" name="apple-mobile-web-app-title"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/events.css" rel="stylesheet"/>
+<link href="css/animation.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="app-header">
+<a aria-label="City4Christ home" class="header-logo" href="home.html">
+<img alt="City4Christ Logo" src="assets/images/logo.jpeg"/>
+<span>City4Christ</span>
+</a>
+<div class="header-actions">
+<button aria-label="Search" class="header-btn global-search-btn" type="button">
+<i class="bi bi-search"></i>
+</button>
+<a aria-label="Notifications" class="header-btn" href="notifications.html">
+<i class="bi bi-bell-fill"></i>
+</a>
+<a aria-label="Profile" class="header-profile-btn" href="profile.html">
+<img alt="Profile" src="assets/images/maleMember.jpeg"/>
+</a>
+</div>
+</header>
+<main class="events-container">
+<!-- HERO -->
+<section class="events-hero fade-up">
+<div>
+<span class="events-kicker">
+                Gather Together
+            </span>
+<h1>
+                Upcoming Gatherings
+            </h1>
+<p>
+                Stay connected with worship nights, fellowship,
+                prayer meetings and special City4Christ events.
+            </p>
+</div>
+<div class="events-hero-icon">
+<i class="bi bi-calendar-heart-fill"></i>
+</div>
+</section>
+<!-- FILTERS -->
+<section class="event-filters">
+<button class="event-filter active" data-filter="upcoming">
+
+            Upcoming
+
+        </button>
+<button class="event-filter" data-filter="all">
+
+            All Events
+
+        </button>
+<button class="event-filter" data-filter="past">
+
+            Past Events
+
+        </button>
+</section>
+<!-- UPCOMING -->
+<section class="events-section" id="upcomingSection">
+<div class="section-heading">
+<div>
+<span>
+                    Next on the calendar
+                </span>
+<h2>
+                    Upcoming Events
+                </h2>
+</div>
+</div>
+<div class="events-grid" id="upcomingEvents">
+<article class="event-card fade-up" data-date="2026-10-04T10:00:00">
+<div class="event-image-wrap">
+<img alt="Worship Night" class="event-image" src="assets/images/youthWorship.jpeg"/>
+<span class="event-badge">
+                        Worship
+                    </span>
+</div>
+<div class="event-content">
+<div class="event-date-box">
+<strong>04</strong>
+<span>OCT</span>
+</div>
+<div class="event-info">
+<h3>
+                            Sunday Worship Gathering
+                        </h3>
+<p>
+                            A morning of worship, teaching
+                            and fellowship.
+                        </p>
+<div class="event-meta">
+<span>
+<i class="bi bi-clock"></i>
+<span class="event-time">
+                                    10:00 AM
+                                </span>
+</span>
+<span>
+<i class="bi bi-geo-alt"></i>
+                                City4Christ
+                            </span>
+</div>
+</div>
+</div>
+<div class="event-actions">
+<button class="event-primary-btn">
+
+                        View Details
+
+                    </button>
+<button class="event-icon-btn">
+<i class="bi bi-share"></i>
+</button>
+</div>
+</article>
+<article class="event-card fade-up" data-date="2026-10-09T18:30:00">
+<div class="event-image-wrap">
+<img alt="Glory Night" class="event-image" src="assets/images/churchActivities.jpeg"/>
+<span class="event-badge">
+                        Special
+                    </span>
+</div>
+<div class="event-content">
+<div class="event-date-box">
+<strong>09</strong>
+<span>OCT</span>
+</div>
+<div class="event-info">
+<h3>
+                            Glory Night
+                        </h3>
+<p>
+                            A night of fresh fire, worship
+                            and prayer.
+                        </p>
+<div class="event-meta">
+<span>
+<i class="bi bi-clock"></i>
+<span class="event-time">
+                                    6:30 PM
+                                </span>
+</span>
+<span>
+<i class="bi bi-geo-alt"></i>
+                                Main Auditorium
+                            </span>
+</div>
+</div>
+</div>
+<div class="event-actions">
+<button class="event-primary-btn">
+                        View Details
+                    </button>
+<button class="event-icon-btn">
+<i class="bi bi-share"></i>
+</button>
+</div>
+</article>
+<article class="event-card fade-up" data-date="2026-10-17T16:00:00">
+<div class="event-image-wrap">
+<img alt="Year of Enlargement" class="event-image" src="assets/images/banner.jpeg"/>
+<span class="event-badge">
+                        Conference
+                    </span>
+</div>
+<div class="event-content">
+<div class="event-date-box">
+<strong>17</strong>
+<span>OCT</span>
+</div>
+<div class="event-info">
+<h3>
+                            Enlargement Conference
+                        </h3>
+<p>
+                            Teaching, prayer and fellowship
+                            around the 2026 theme.
+                        </p>
+<div class="event-meta">
+<span>
+<i class="bi bi-clock"></i>
+<span class="event-time">
+                                    4:00 PM
+                                </span>
+</span>
+<span>
+<i class="bi bi-geo-alt"></i>
+                                City4Christ
+                            </span>
+</div>
+</div>
+</div>
+<div class="event-actions">
+<button class="event-primary-btn">
+                        View Details
+                    </button>
+<button class="event-icon-btn">
+<i class="bi bi-share"></i>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- PAST EVENTS -->
+<section class="events-section past-events-section" id="pastSection">
+<div class="section-heading">
+<div>
+<span>
+                    Previous gatherings
+                </span>
+<h2>
+                    Past Events
+                </h2>
+</div>
+</div>
+<div class="events-grid" id="pastEvents">
+<article class="event-card past-event fade-up" data-date="2026-09-20T17:00:00">
+<div class="event-image-wrap">
+<img alt="Prayer Night" class="event-image" src="assets/images/churchActivities.jpeg"/>
+<span class="event-badge">
+                        Completed
+                    </span>
+</div>
+<div class="event-content">
+<div class="event-date-box">
+<strong>20</strong>
+<span>SEP</span>
+</div>
+<div class="event-info">
+<h3>
+                            Prayer &amp; Worship Night
+                        </h3>
+<p>
+                            A powerful evening of prayer
+                            and fellowship.
+                        </p>
+</div>
+</div>
+<div class="event-actions">
+<button class="event-secondary-btn">
+
+                        View Highlights
+
+                    </button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<nav class="bottom-nav"><a href="home.html"><i class="bi bi-house-fill"></i><span>Home</span></a><a href="community.html"><i class="bi bi-people-fill"></i><span>Community</span></a><a class="post-nav-link" href="home.html#share-faith"><i class="bi bi-plus-lg"></i><span>Post</span></a><a href="prayer.html"><i class="bi bi-heart-fill"></i><span>Prayer</span></a><a href="word.html"><i class="bi bi-book-fill"></i><span>Word</span></a></nav>
+<script src="js/app.js"></script>
+<script>
+
+/* SORT EVENTS */
+
+function sortEvents(containerId){
+
+    const container =
+    document.getElementById(containerId);
+
+    const events =
+    Array.from(
+        container.querySelectorAll(
+            ".event-card"
+        )
+    );
+
+
+    events.sort((a,b)=>{
+
+        return (
+            new Date(a.dataset.date)
+            -
+            new Date(b.dataset.date)
+        );
+
+    });
+
+
+    events.forEach(event => {
+
+        container.appendChild(event);
+
+    });
+
+}
+
+
+sortEvents("upcomingEvents");
+sortEvents("pastEvents");
+
+
+
+/* FILTERS */
+
+const filters =
+document.querySelectorAll(
+    ".event-filter"
+);
+
+const upcomingSection =
+document.getElementById(
+    "upcomingSection"
+);
+
+const pastSection =
+document.getElementById(
+    "pastSection"
+);
+
+
+filters.forEach(button => {
+
+    button.addEventListener(
+    "click",
+    function(){
+
+        filters.forEach(item => {
+
+            item.classList.remove(
+                "active"
+            );
+
+        });
+
+
+        this.classList.add(
+            "active"
+        );
+
+
+        const filter =
+        this.dataset.filter;
+
+
+        if(filter === "upcoming"){
+
+            upcomingSection.style.display =
+            "";
+
+            pastSection.style.display =
+            "none";
+
+        }
+
+
+        else if(filter === "past"){
+
+            upcomingSection.style.display =
+            "none";
+
+            pastSection.style.display =
+            "";
+
+        }
+
+
+        else{
+
+            upcomingSection.style.display =
+            "";
+
+            pastSection.style.display =
+            "";
+
+        }
+
+    });
+
+});
+
+
+/* DEFAULT */
+
+pastSection.style.display =
+"none";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+/* =========================================
+CITY4CHRIST PRAYER PAGE
+========================================= */
+
+
+.prayer-container {
+
+    width:100%;
+    max-width:950px;
+
+    margin:0 auto;
+
+    padding:
+    34px 20px 120px;
+
+}
+
+
+/* HERO */
+
+.prayer-hero {
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:25px;
+
+    padding:34px;
+
+    border-radius:28px;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5B2C83,
+        #78439a
+    );
+
+    margin-bottom:24px;
+
+    box-shadow:
+    0 14px 40px
+    rgba(91,44,131,.17);
+
+}
+
+
+.prayer-kicker {
+
+    display:block;
+
+    color:#E2C35A;
+
+    font-size:13px;
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.4px;
+
+    margin-bottom:8px;
+
+}
+
+
+.prayer-hero h1 {
+
+    margin:0 0 10px;
+
+    font-size:
+    clamp(29px,4vw,43px);
+
+    font-weight:800;
+
+}
+
+
+.prayer-hero p {
+
+    max-width:600px;
+
+    margin:0;
+
+    color:
+    rgba(255,255,255,.87);
+
+    line-height:1.7;
+
+}
+
+
+.prayer-hero-icon {
+
+    width:105px;
+    height:105px;
+
+    min-width:105px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.1);
+
+    color:#D4AF37;
+
+    font-size:45px;
+
+}
+
+
+/* SUBMIT CARD */
+
+.prayer-submit-card {
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:24px;
+
+    margin-bottom:22px;
+
+    box-shadow:
+    0 8px 28px
+    rgba(0,0,0,.07);
+
+}
+
+
+.submit-header {
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+}
+
+
+.prayer-user-avatar {
+
+    width:70px;
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:
+    3px solid #D4AF37;
+
+}
+
+
+.submit-header h2 {
+
+    margin:0 0 3px;
+
+    color:#2d1c37;
+
+    font-size:21px;
+
+    font-weight:800;
+
+}
+
+
+.submit-header p {
+
+    margin:0;
+
+    color:#777;
+
+    font-size:13px;
+
+}
+
+
+/* PRAYER TEXT AREA */
+
+#prayerText {
+
+    width:100%;
+
+    min-height:135px;
+
+    resize:vertical;
+
+    padding:17px;
+
+    border:
+    1px solid #ddd4e4;
+
+    border-radius:18px;
+
+    outline:none;
+
+    background:#FAF8FC;
+
+    color:#222;
+
+    caret-color:#5B2C83;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+
+#prayerText::placeholder {
+
+    color:#8b818e;
+
+}
+
+
+#prayerText:focus {
+
+    border-color:#5B2C83;
+
+    box-shadow:
+    0 0 0 4px
+    rgba(91,44,131,.08);
+
+}
+
+
+/* OPTIONS */
+
+.prayer-options {
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+
+.privacy-option {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#6b626f;
+
+    font-size:14px;
+
+}
+
+
+.submit-prayer-btn {
+
+    border:0;
+
+    border-radius:15px;
+
+    padding:
+    12px 20px;
+
+    background:#5B2C83;
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+
+/* SUCCESS */
+
+.prayer-success {
+
+    display:none;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:18px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:#eef8f1;
+
+    color:#246b3c;
+
+}
+
+
+.prayer-success.show {
+
+    display:flex;
+
+}
+
+
+.prayer-success i {
+
+    font-size:25px;
+
+}
+
+
+.prayer-success strong,
+.prayer-success span {
+
+    display:block;
+
+}
+
+
+.prayer-success span {
+
+    margin-top:2px;
+
+    font-size:13px;
+
+}
+
+
+/* FILTERS */
+
+.prayer-filters {
+
+    display:flex;
+
+    gap:9px;
+
+    overflow-x:auto;
+
+    padding:
+    3px 0 5px;
+
+    margin:
+    25px 0 20px;
+
+}
+
+
+.prayer-filter {
+
+    white-space:nowrap;
+
+    border:0;
+
+    padding:
+    10px 18px;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:#736a78;
+
+    font-weight:700;
+
+}
+
+
+.prayer-filter.active {
+
+    background:#5B2C83;
+
+    color:#fff;
+
+}
+
+
+/* WALL */
+
+.prayer-wall {
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+
+.section-heading span {
+
+    color:#8a7b91;
+
+    font-size:13px;
+
+}
+
+
+.section-heading h2 {
+
+    margin:
+    3px 0 16px;
+
+    color:#2d1c37;
+
+    font-size:26px;
+
+    font-weight:800;
+
+}
+
+
+.prayer-card {
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:22px;
+
+    box-shadow:
+    0 8px 28px
+    rgba(0,0,0,.06);
+
+}
+
+
+.prayer-profile-row {
+
+    display:flex;
+    align-items:center;
+
+    gap:13px;
+
+}
+
+
+.prayer-avatar {
+
+    width:62px;
+    height:62px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:
+    3px solid #D4AF37;
+
+}
+
+
+.prayer-profile-row a {
+
+    display:block;
+
+    color:#2d1c37;
+
+    font-weight:800;
+
+    text-decoration:none;
+
+}
+
+
+.prayer-profile-row span {
+
+    color:#8b838f;
+
+    font-size:12px;
+
+}
+
+
+.prayer-card > p {
+
+    margin:
+    18px 0;
+
+    color:#4d4650;
+
+    line-height:1.7;
+
+}
+
+
+.answered-badge {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    margin-bottom:14px;
+
+    padding:
+    7px 12px;
+
+    border-radius:50px;
+
+    background:#fff8df;
+
+    color:#8c6c00;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+/* ACTIONS */
+
+.prayer-card-actions {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:8px;
+
+    padding-top:13px;
+
+    border-top:
+    1px solid #eee8f0;
+
+}
+
+
+.prayer-card-actions button {
+
+    flex:1;
+
+    border:0;
+
+    background:transparent;
+
+    color:#645c68;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+.pray-btn {
+
+    color:#5B2C83 !important;
+
+}
+
+
+.pray-btn.prayed {
+
+    background:#F3EEFA;
+
+    border-radius:12px;
+
+    padding:
+    8px 5px;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+    .prayer-container {
+
+        padding:
+        24px 14px 110px;
+
+    }
+
+
+    .prayer-hero {
+
+        padding:
+        25px 22px;
+
+    }
+
+
+    .prayer-hero-icon {
+
+        width:72px;
+        height:72px;
+
+        min-width:72px;
+
+        border-radius:22px;
+
+        font-size:31px;
+
+    }
+
+
+    .prayer-options {
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+
+    .submit-prayer-btn {
+
+        width:100%;
+
+    }
+
+
+    .prayer-card-actions {
+
+        gap:3px;
+
+    }
+
+
+    .prayer-card-actions button {
+
+        font-size:12px;
+
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media(max-width:430px){
+
+    .prayer-hero-icon {
+
+        display:none;
+
+    }
+
+
+    .prayer-user-avatar {
+
+        width:62px;
+        height:62px;
+
+    }
+
+
+    .prayer-card {
+
+        padding:18px;
+
+    }
+
+
+    .prayer-avatar {
+
+        width:56px;
+        height:56px;
+
+    }
+
+}
